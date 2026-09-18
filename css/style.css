@@ -73,3 +73,90 @@ nav a:hover {
 .about-card p {
     line-height: 1.8;
 }
+/* Dashboard */
+
+.dashboard {
+    max-width: 1000px;
+    margin: auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.dashboard h1 {
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.student-info,
+.course-section,
+.academic-summary {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    animation: slideUp 0.8s ease forwards;
+}
+
+.student-info:hover,
+.course-section:hover,
+.academic-summary:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+tr {
+    transition: 0.3s;
+}
+
+tr:hover {
+    background-color: #eef4ff;
+    transform: scale(1.01);
+}
+
+td:first-child {
+    font-weight: bold;
+    color: #2563eb;
+}
+
+/* Page animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
