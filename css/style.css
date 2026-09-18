@@ -56,3 +56,20 @@ nav a {
 nav a:hover {
     color: #93c5fd;
 }
+.about-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-card h2 {
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 8px;
+}
+
+.about-card p {
+    line-height: 1.8;
+}
